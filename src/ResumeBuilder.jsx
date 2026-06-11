@@ -43,7 +43,7 @@ const initData = () => ({
 
 // ─── AI call via proxy server ─────────────────────────────────────
 async function callClaude(messages, system = "") {
-  const res = await fetch("http://localhost:5000/api/ai", {
+  const res = await fetch("/api/ai", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
